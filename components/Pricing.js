@@ -23,14 +23,13 @@ const Pricing = () => {
               variants={scrollAnimation}
               className="text-2xl sm:text-3xl lg:text-4xl font-medium text-black-600 leading-relaxed"
             >
-              Choose Your Plan
+              Escolha seu plano
             </motion.h3>
             <motion.p
               variants={scrollAnimation}
               className="leading-normal w-10/12 sm:w-7/12 lg:w-6/12 mx-auto my-2 text-center"
             >
-              Let's choose the package that is best for you and explore it happily
-              and cheerfully.
+              tecnologia a favor de sua segurança, escolha a baixo um de nossos planos que cabem no seu bolso
             </motion.p>
           </ScrollAnimationWrapper>
           <div className="grid grid-flow-row sm:grid-flow-col grid-cols-1 sm:grid-cols-3 gap-4 lg:gap-12 py-8 lg:py-12 px-6 sm:px-0 lg:px-6">
@@ -54,25 +53,25 @@ const Pricing = () => {
                   />
                 </div>
                 <p className="text-lg text-black-600 font-medium capitalize my-2 sm:my-7">
-                  Free Plan
+                  Plano básico
                 </p>
                 <ul className="flex flex-col list-inside pl-6 xl:pl-0 items-start justify-start text-left text-black-500 flex-grow">
                   <li className="relative check custom-list my-2">
-                    Unlimited Bandwitch
+                    Central
                   </li>
                   <li className="relative check custom-list my-2">
-                    Encrypted Connection
+                    bateria
                   </li>
                   <li className="relative check custom-list my-2">
-                    No Traffic Logs
+                    4 Sensores int. com fio + sirene
                   </li>
                   <li className="relative check custom-list my-2">
-                    Works on All Devices
+                    controle
                   </li>
                 </ul>
                 <div className="flex flex-col w-full justify-center mb-8 flex-none mt-12">
                   <p className="text-2xl text-black-600 text-center mb-4 ">
-                    Free
+                  R$ 300,00 <span className="text-black-500">/mês</span>
                   </p>
                   <ButtonOutline>Select</ButtonOutline>
                 </div>
@@ -98,28 +97,31 @@ const Pricing = () => {
                 />
               </div>
               <p className="text-lg text-black-600 font-medium capitalize my-2 sm:my-7">
-                Standard Plan{" "}
+                Plano Premium {" "}
               </p>
               <ul className="flex flex-col list-inside pl-6 xl:pl-0 items-start justify-start text-left text-black-500 flex-grow">
-                <li className="relative check custom-list my-2">
-                  Unlimited Bandwitch
-                </li>
-                <li className="relative check custom-list my-2">
-                  Encrypted Connection
-                </li>
-                <li className="relative check custom-list my-2">
-                  No Traffic Logs
-                </li>
-                <li className="relative check custom-list my-2">
-                  Works on All Devices
-                </li>
-                <li className="relative check custom-list my-2">
-                  Connect Anyware{" "}
-                </li>
-              </ul>
+                  <li className="relative check custom-list my-2">
+                    equipe 24h de plantão 
+                  </li>
+                  <li className="relative check custom-list my-2">
+                    Notificações no nosso app
+                  </li>
+                  <li className="relative check custom-list my-2">
+                    Central
+                  </li>
+                  <li className="relative check custom-list my-2">
+                    bateria
+                  </li>
+                  <li className="relative check custom-list my-2">
+                    4 Sensores int. com fio + sirene
+                  </li>
+                  <li className="relative check custom-list my-2">
+                    controle
+                  </li>
+                </ul>
               <div className="flex flex-col w-full justify-center mb-8 flex-none mt-12">
                 <p className="text-2xl text-black-600 text-center mb-4 ">
-                  $9 <span className="text-black-500">/ mo</span>
+                  R$ 500 <span className="text-black-500">/ mês</span>
                 </p>
                 <ButtonOutline>Select</ButtonOutline>
               </div>
@@ -138,107 +140,60 @@ const Pricing = () => {
               >
               <div className="p-4 lg:p-0 mt-6 lg:mt-16">
                 <Image
-                  src="/assets/Premium.png"
+                  src="/assets/Standard.png"
                   width={145}
                   height={165}
-                  alt="Premium Plan"
+                  alt="Standard Plan"
                 />
               </div>
               <p className="text-lg text-black-600 font-medium capitalize my-2 sm:my-7">
-                Premium Plan{" "}
+                Plano master Premium {" "}
               </p>
               <ul className="flex flex-col list-inside pl-6 xl:pl-0 items-start justify-start text-left text-black-500 flex-grow">
-                <li className="relative check custom-list my-2">
-                  Unlimited Bandwitch
-                </li>
-                <li className="relative check custom-list my-2">
-                  Encrypted Connection
-                </li>
-                <li className="relative check custom-list my-2">
-                  No Traffic Logs
-                </li>
-                <li className="relative check custom-list my-2">
-                  Works on All Devices
-                </li>
-                <li className="relative check custom-list my-2">
-                  Connect Anyware{" "}
-                </li>
-                <li className="relative check custom-list my-2">
-                  Get New Features{" "}
-                </li>
-              </ul>
+                  <li className="relative check custom-list my-2">
+                    equipe 24h de plantão 
+                  </li>
+                  <li className="relative check custom-list my-2">
+                    Notificações no nosso app
+                  </li>
+                  <li className="relative check custom-list my-2">
+                    Central
+                  </li>
+                  <li className="relative check custom-list my-2">
+                    bateria
+                  </li>
+                  <li className="relative check custom-list my-2">
+                    4 Sensores int. com fio + sirene
+                  </li>
+                  <li className="relative check custom-list my-2">
+                    controle
+                  </li>
+                </ul>
               <div className="flex flex-col w-full justify-center mb-8 flex-none mt-12">
                 <p className="text-2xl text-black-600 text-center mb-4 ">
-                  $12 <span className="text-black-500">/ mo</span>
+                  R$ 500 <span className="text-black-500">/ mês</span>
                 </p>
-
                 <ButtonOutline>Select</ButtonOutline>
               </div>
               </motion.div>
             </ScrollAnimationWrapper>
+            
           </div>
         </div>
-        <div className="flex flex-col w-full my-16">
-          <ScrollAnimationWrapper>
-            <motion.h3
-              variants={scrollAnimation}
-              className="text-2xl sm:text-3xl lg:text-4xl font-medium text-black-600 leading-relaxed w-9/12 sm:w-6/12 lg:w-4/12 mx-auto">
-              Huge Global Network of Fast VPN{" "}
-            </motion.h3>
-            <motion.p className="leading-normal  mx-auto my-2 w-10/12 sm:w-7/12 lg:w-6/12" variants={scrollAnimation}>
-              See LaslesVPN everywhere to make it easier for you when you move
-              locations.
-            </motion.p>
-          </ScrollAnimationWrapper>
-          <ScrollAnimationWrapper>
-            <motion.div className="py-12 w-full px-8 mt-16" variants={scrollAnimation}> 
-              <Maps className="w-full h-auto" />
-            </motion.div>
-          </ScrollAnimationWrapper>
-          <ScrollAnimationWrapper>
-            <motion.div className="w-full flex justify-evenly items-center mt-4 flex-wrap lg:flex-nowrap" variants={scrollAnimation}>
-              {/* <Netflix className="h-18 w-auto" /> */}
-              <img
-                src="/assets/Icon/amazon.png"
-                className="h-14 w-auto mt-4 lg:mt-2"
-                alt=""
-              />
-              <img
-                src="/assets/Icon/netflix.png"
-                className="h-14 w-auto mt-2 lg:mt-0"
-                alt=""
-              />
-              <img
-                src="/assets/Icon/reddit.png"
-                className="h-12 w-auto mt-2 lg:mt-0"
-                alt=""
-              />
-              <img
-                src="/assets/Icon/discord.png"
-                className="h-14 w-auto mt-2 lg:mt-0"
-                alt=""
-              />
-              <img
-                src="/assets/Icon/spotify.png"
-                className="h-12 w-auto mt-2 lg:mt-0"
-                alt=""
-              />
-            </motion.div>
-          </ScrollAnimationWrapper>
-        </div>
+        
         <div className="flex flex-col w-full my-16" id="testimoni">
           <ScrollAnimationWrapper>
             <motion.h3
               variants={scrollAnimation}
               className="text-2xl sm:text-3xl lg:text-4xl font-medium text-black-600 leading-normal w-9/12 sm: lg:w-4/12 mx-auto">
-              Trusted by Thousands of Happy Customer{" "}
+              Aprovado por nossos clientes satisfeitos{" "}
             </motion.h3>
             <motion.p
               variants={scrollAnimation}
               className="leading-normal mx-auto mb-2 mt-4 w-10/12 sm:w-7/12 lg:w-6/12"
             >
-              These are the stories of our customers who have joined us with great
-              pleasure when using this crazy feature.
+              Estas são as histórias dos nossos clientes que se juntaram a nós com grande
+              veja como a segurança muda vidas
             </motion.p>
           </ScrollAnimationWrapper>
           <ScrollAnimationWrapper className="w-full flex flex-col py-12">
@@ -251,11 +206,11 @@ const Pricing = () => {
               <div className="absolute rounded-xl  py-8 sm:py-14 px-6 sm:px-12 lg:px-16 w-full flex flex-col sm:flex-row justify-between items-center z-10 bg-white-500">
                 <div className="flex flex-col text-left w-10/12 sm:w-7/12 lg:w-5/12 mb-6 sm:mb-0">
                   <h5 className="text-black-600 text-xl sm:text-2xl lg:text-3xl leading-relaxed font-medium">
-                    Subscribe Now for <br /> Get Special Features!
+                    Aproveite agora <br /> receba uma oferta especial!
                   </h5>
-                  <p>Let's subscribe with us and find the fun.</p>
+                  <p>Fale agora mesmo com um de nossos consultores, está esperando o que para priorizar a sua segurança</p>
                 </div>
-                <ButtonPrimary>Get Started</ButtonPrimary>
+                <ButtonPrimary>Falar com um consultor</ButtonPrimary>
               </div>
               <div
                 className="absolute bg-black-600 opacity-5 w-11/12 roudned-lg h-60 sm:h-56 top-0 mt-8 mx-auto left-0 right-0"
