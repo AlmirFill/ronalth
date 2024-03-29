@@ -19,50 +19,23 @@ const Testimoni = ({
         "Nunca dormi tão tranquilo na vida sabendo que minha case e meu patrimonio está seguro na mão de uma empresa séria e competente",
     },
     {
-      name: "Almir filho",
-      image: "/assets/people-3.png",
+      name: "Luan",
+      image: "/assets/people-1.png",
       city: "Marituba",
       country: "Brasil",
-      rating: "4.5",
+      rating: "4.8",
       testimoni:
-        "Nunca dormi tão tranquilo na vida sabendo que minha case e meu patrimonio está seguro na mão de uma empresa séria e competente",
+        "Equipamentos de Primeira Qualidade",
     },
     {
-      name: "Almir filho",
-      image: "/assets/people-3.png",
+      name: "Ana Carolline",
+      image: "/assets/people-2.png",
       city: "Marituba",
       country: "Brasil",
-      rating: "4.5",
+      rating: "3.5",
       testimoni:
-        "Nunca dormi tão tranquilo na vida sabendo que minha case e meu patrimonio está seguro na mão de uma empresa séria e competente",
-    },
-    {
-      name: "Almir filho",
-      image: "/assets/people-3.png",
-      city: "Marituba",
-      country: "Brasil",
-      rating: "4.5",
-      testimoni:
-        "Nunca dormi tão tranquilo na vida sabendo que minha case e meu patrimonio está seguro na mão de uma empresa séria e competente",
-    },
-    {
-      name: "Almir filho",
-      image: "/assets/people-3.png",
-      city: "Marituba",
-      country: "Brasil",
-      rating: "4.5",
-      testimoni:
-        "Nunca dormi tão tranquilo na vida sabendo que minha case e meu patrimonio está seguro na mão de uma empresa séria e competente",
-    },
-    {
-      name: "Almir filho",
-      image: "/assets/people-3.png",
-      city: "Marituba",
-      country: "Brasil",
-      rating: "4.5",
-      testimoni:
-        "Nunca dormi tão tranquilo na vida sabendo que minha case e meu patrimonio está seguro na mão de uma empresa séria e competente",
-    },
+        "A equipe me atende a qualquer hora do dia",
+    }
   ],
 }) => {
   const settings = {

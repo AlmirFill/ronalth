@@ -18,8 +18,8 @@ const Hero = ({
       icon: "/assets/Icon/gridicons_location.svg",
     },
     {
-      name: "servidores",
-      number: "50",
+      name: "atendimento",
+      number: "24 hrs",
       icon: "/assets/Icon/bx_bxs-server.svg",
     },
   ],
@@ -37,12 +37,13 @@ const Hero = ({
             variants={scrollAnimation}>
             <div className=" flex flex-col justify-center items-start row-start-2 sm:row-start-1">
               <h1 className="text-3xl lg:text-4xl xl:text-5xl font-medium text-black-600 leading-normal">
-                Tecnologia a favor da sua <strong>Segurança</strong>.
+                Não compre material <strong>errado</strong> na internet, alugue a solução <strong>Profissional</strong> para você.
               </h1>
               <p className="text-black-500 mt-4 mb-6">
                 Quanto custa a Segurança da sua Familia? Aqui temos monitoramento 24 horas com as Tecnologias mais atuais do mercado
               </p>
-              <ButtonPrimary>Saiba mais</ButtonPrimary>
+              <div onClick={()=>{window.location.href = 'https://api.whatsapp.com/send?phone=5591981111342&text=Vim%20pelo%20site%20ronalth'}}><ButtonPrimary >Saiba mais</ButtonPrimary></div>
+              
             </div>
             <div className="flex w-full">
               <motion.div className="h-full w-full" variants={scrollAnimation}>
@@ -50,8 +51,8 @@ const Hero = ({
                   src="/assets/Illustration1.png"
                   alt="VPN Illustrasi"
                   quality={100}
-                  width={612}
-                  height={612}
+                  width={1280}
+                  height={800}
                   layout="responsive"
                 />
               </motion.div>
@@ -74,7 +75,7 @@ const Hero = ({
                 </div>
                 <div className="flex flex-col">
                   <p className="text-xl text-black-600 font-bold">
-                    {listUsers.number}+
+                    {listUsers.number}
                   </p>
                   <p className="text-lg text-black-500">{listUsers.name}</p>
                 </div>

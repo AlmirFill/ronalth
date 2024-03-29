@@ -4,6 +4,7 @@ import Link from "next/link";
 import { Link as LinkScroll } from "react-scroll";
 import ButtonOutline from "../misc/ButtonOutline.";
 import LogoVPN from "../../public/assets/Logo.svg";
+import Image from "next/image";
 
 const Header = () => {
   const [activeLink, setActiveLink] = useState(null);
@@ -23,7 +24,12 @@ const Header = () => {
       >
         <nav className="max-w-screen-xl px-6 sm:px-8 lg:px-16 mx-auto grid grid-flow-col py-3 sm:py-4">
           <div className="col-start-1 col-end-2 flex items-center">
-            Ronalth
+          <Image
+                    src="/assets/logo.png"
+                    width={66}
+                    height={49}
+                    alt="Free Plan"
+                  />
           </div>
           <ul className="hidden lg:flex col-start-4 col-end-8 text-black-500  items-center">
             <LinkScroll
@@ -100,12 +106,12 @@ const Header = () => {
             </LinkScroll>
           </ul>
           <div className="col-start-10 col-end-12 font-medium flex justify-end items-center">
-            {/* <Link href="/">
+            <Link href="https://api.whatsapp.com/send?phone=5591981111342&text=Vim%20pelo%20site%20ronalth">
               <a className="text-black-600 mx-2 sm:mx-4 capitalize tracking-wide hover:text-blue-500 transition-all">
                   Fale com um vendendor
-              </a> */}
-            {/* </Link> */}
-            <ButtonOutline>Fale com um vendedor</ButtonOutline>
+              </a> 
+            </Link>
+            {/* <ButtonOutline >Fale com um vendedor</ButtonOutline> */}
           </div>
         </nav>
       </header>
