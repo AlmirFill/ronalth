@@ -8,6 +8,13 @@ import { motion } from "framer-motion";
 import getScrollAnimation from "../utils/getScrollAnimation";
 import ScrollAnimationWrapper from "./Layout/ScrollAnimationWrapper";
 
+const features = [
+  "Sensores de porta e janelas",
+  "Sensores de movimento",
+  "Alarmes e monitoramento em tempo real",
+  "Monitoramento com inteligência artificial"
+]
+
 const Pricing = () => {
   const scrollAnimation = useMemo(() => getScrollAnimation(), []);
 
@@ -66,7 +73,7 @@ const Pricing = () => {
                     1 cabo de forca p alimentação elétrica
                   </li>
                   <li className="relative check custom-list my-2">
-                    4 sensor infra ant. Com fio
+                    4 sensor infra int. Com fio
                   </li>
                   <li className="relative check custom-list my-2">
                     1 controle
@@ -82,7 +89,7 @@ const Pricing = () => {
                   <p className="text-2xl text-black-600 text-center mb-4 ">
                     R$ 300,00 <span className="text-black-500">/mês</span>
                   </p>
-                  <div onClick={()=>{window.location.href = 'https://api.whatsapp.com/send?phone=5591981111342&text=Vim%20pelo%20site%20ronalth%20*Quero%20o%20plano%20Basico*'}}><ButtonOutline>Select</ButtonOutline></div>
+                  <div onClick={() => { window.location.href = 'https://api.whatsapp.com/send?phone=5591981111342&text=Vim%20pelo%20site%20ronalth%20*Quero%20o%20plano%20Basico*' }}><ButtonOutline>Select</ButtonOutline></div>
                 </div>
               </motion.div>
             </ScrollAnimationWrapper>
@@ -109,7 +116,7 @@ const Pricing = () => {
                   Plano Premium {" "}
                 </p>
                 <ul className="flex flex-col list-inside pl-6 xl:pl-0 items-start justify-start text-left text-black-500 flex-grow">
-                <li className="relative check custom-list my-2">
+                  <li className="relative check custom-list my-2">
                     1 Central Monitorada 24 horas
                   </li>
                   <li className="relative check custom-list my-2">
@@ -119,7 +126,7 @@ const Pricing = () => {
                     1 cabo de forca p alimentação elétrica
                   </li>
                   <li className="relative check custom-list my-2">
-                    4 sensor infra ant. Com fio
+                    4 sensor infra int. Com fio
                   </li>
                   <li className="relative check custom-list my-2">
                     1 controle
@@ -135,10 +142,35 @@ const Pricing = () => {
                   <p className="text-2xl text-black-600 text-center mb-4 ">
                     R$ 500 <span className="text-black-500">/ mês</span>
                   </p>
-                  <div onClick={()=>{window.location.href = 'https://api.whatsapp.com/send?phone=5591981111342&text=Vim%20pelo%20site%20ronalth%20*Quero%20o%20plano%20Premium*'}}><ButtonOutline>Select</ButtonOutline></div>
+                  <div onClick={() => { window.location.href = 'https://api.whatsapp.com/send?phone=5591981111342&text=Vim%20pelo%20site%20ronalth%20*Quero%20o%20plano%20Premium*' }}><ButtonOutline>Select</ButtonOutline></div>
                 </div>
               </motion.div>
             </ScrollAnimationWrapper>
+
+            <motion.div className="flex flex-col items-end justify-center mt-[2rem] w-full lg:w-9/12" variants={scrollAnimation}>
+              <h3 className="text-3xl lg:text-4xl mx-auto font-medium leading-relaxed text-black-600">
+                Periféricos a incluir
+              </h3>
+
+              <ul className="text-black-500 self-start list-inside ml-8">
+                {features.map((feature, index) => (
+                  <motion.li
+                    className="relative circle-check custom-list"
+                    custom={{ duration: 2 + index }}
+                    variants={scrollAnimation}
+                    key={feature}
+                    whileHover={{
+                      scale: 1.1,
+                      transition: {
+                        duration: .2
+                      }
+                    }}>
+                    {feature}
+                  </motion.li>
+                )
+                )}
+              </ul>
+            </motion.div>
           </div>
         </div>
 
@@ -171,7 +203,7 @@ const Pricing = () => {
                   </h5>
                   <p>Fale agora mesmo com um de nossos consultores, está esperando o que para priorizar a sua segurança</p>
                 </div>
-                <div onClick={()=>{window.location.href = 'https://api.whatsapp.com/send?phone=5591981111342&text=Vim%20pelo%20site%20ronalth'}}><ButtonPrimary>Falar com um consultor</ButtonPrimary></div>
+                <div onClick={() => { window.location.href = 'https://api.whatsapp.com/send?phone=5591981111342&text=Vim%20pelo%20site%20ronalth' }}><ButtonPrimary>Falar com um consultor</ButtonPrimary></div>
               </div>
               <div
                 className="absolute bg-black-600 opacity-5 w-11/12 roudned-lg h-60 sm:h-56 top-0 mt-8 mx-auto left-0 right-0"

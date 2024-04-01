@@ -13,6 +13,9 @@ const Footer = () => {
             <strong className="font-medium">Ronalth</strong> comercio e serviços
             a tecnologia a favor da sua segurança.
           </p>
+          <p className="mb-4">
+            Todas imagens meramente ilustrativas
+          </p>
           <div className="flex w-full mt-2 mb-8 -mx-2">
             {/* <div className="mx-2 bg-white-500 rounded-full items-center justify-center flex p-2 shadow-md">
               <Facebook className="h-6 w-6" />
